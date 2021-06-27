@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.3.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.3.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section class="menu menu1 cid-sB5tRgx09p" once="menu" id="menu1-u">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobiri.se">首頁</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page1.html#top">射擊</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page2.html#top">田徑</a>
+                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page3.html#top">舉重</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page4.html#top">
+                            桌球</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page5.html#top">
+                            游泳</a></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="header6 cid-sB5uwfoqeo mbr-fullscreen" id="header6-w">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(68, 121, 217);"></div>
+
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong>2020東京奧運</strong></h1>
+                
+                <p class="mbr-text mbr-white mbr-fonts-style display-7">
+                    疫情衝擊<br>使得東京奧運無法如期舉行<br>在這種情況下<br>中華健兒取得不少得來不易的奧運席次<br>讓我們一起為中華隊加油</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<iframe src="https://uploads.knightlab.com/storymapjs/a42602deb1b161673d8d819b68c98d87/dong-jing-ao-yun-xuan-shou-chu-sheng-di-tu/index.html" frameborder="0" width="100%" height="800"></iframe>
+<section class="content4 cid-sBs55nyE66" id="content4-1m">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-1"><strong>選手介紹樹狀圖</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-5"></h4>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+          body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
+
+          #chartdiv {
+          width: 100%;
+          height:550px;}
+  </style>
+
+</head>
+
+<body>
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  <div id="chartdiv"></div> 
+  <script>
+      /**
+ * ---------------------------------------
+ * This demo was created using amCharts 4.
+ * 
+ * For more information visit:
+ * https://www.amcharts.com/
+ * 
+ * Documentation is available at:
+ * https://www.amcharts.com/docs/v4/
+ * ---------------------------------------
+ */
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
+
+var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+networkSeries.dataFields.linkWith = "linkWith";
+networkSeries.dataFields.name = "name";
+networkSeries.dataFields.id = "name";
+networkSeries.dataFields.value = "value";
+networkSeries.dataFields.children = "children";
+
+networkSeries.nodes.template.label.text = "{name}"
+networkSeries.fontSize = 8;
+networkSeries.linkWithStrength = 0;
+
+var nodeTemplate = networkSeries.nodes.template;
+nodeTemplate.tooltipText = "{name}";
+nodeTemplate.fillOpacity = 1;
+nodeTemplate.label.hideOversized = true;
+nodeTemplate.label.truncate = true;
+
+var linkTemplate = networkSeries.links.template;
+linkTemplate.strokeWidth = 1;
+var linkHoverState = linkTemplate.states.create("hover");
+linkHoverState.properties.strokeOpacity = 1;
+linkHoverState.properties.strokeWidth = 2;
+
+nodeTemplate.events.on("over", function (event) {
+    var dataItem = event.target.dataItem;
+    dataItem.childLinks.each(function (link) {
+        link.isHover = true;
+    })
+})
+
+nodeTemplate.events.on("out", function (event) {
+    var dataItem = event.target.dataItem;
+    dataItem.childLinks.each(function (link) {
+        link.isHover = false;
+    })
+})
+
+networkSeries.data = [  
+   {  
+      "name":"東京奧運臺灣選手介紹",
+      "value":350,
+      "linkWith":[],
+      "children":[{"name":"追跡者Chaser團隊","value":70}]
+   },
+   {  
+      "name":"射擊選手",
+      "value":200,
+      "linkWith":["東京奧運臺灣選手介紹"],
+      "children":[{"name":"田家榛","value":150},
+                  {"name":"吳佳穎","value":100},
+                  {"name":"呂紹全","value":70},
+                  {"name":"林穎欣","value":70},
+                  {"name":"楊昆弼","value":70}]
+   },{  
+      "name":"田徑選手",
+      "value":200,
+      "linkWith":["東京奧運臺灣選手介紹"],
+      "children":[{"name":"鄭兆村","value":100},
+                  {"name":"黃士峰","value":150},]
+   },
+   {  
+      "name":"舉重選手",
+      "value":200,
+      "linkWith":["東京奧運臺灣選手介紹"],
+      "children":[{"name":"郭婞淳","value":150},
+                  {"name":"陳玟卉","value":120},
+                  {"name":"方菀靈","value":100},
+                  {"name":"江念欣","value":70},
+                  {"name":"謝昀庭","value":100}]
+   },
+   {  
+      "name":"桌球選手",
+      "value":200,
+      "linkWith":["東京奧運臺灣選手介紹"],
+      "children":[{"name":"莊智淵","value":150},
+                  {"name":"鄭怡靜","value":100},
+                  {"name":"陳思羽","value":100},
+                  {"name":"林昀儒","value":70}]
+
+   },
+   {  
+      "name":"游泳選手",
+      "value":200,
+      "linkWith":["東京奧運臺灣選手介紹"],
+      "children":[{"name":"王星皓","value":150},
+                  {"name":"王冠閎", "value":100}]
+   },
+];
+
+  </script>
+
+</body>
+
+<html>            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content4 cid-sBs1P7qItR" id="content4-1l">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-1">
+                    <strong>分工樹狀圖</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-5"></h4>
+<iframe src="https://yu-tinglin.github.io/amchart/" title="W3Schools Free Online Web Tutorials">
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="content4 cid-sBxmHugqOZ" id="content4-1n">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-1"><strong>關於我們</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-5">
+                    我們是一群靜宜大學的大三學生，分別來自中南部不同縣市，我們都熱愛運動，因為球隊讓我們相遇，這個網站是介紹東奧選手的，希望能讓大家看到，並且更簡單的了解選手</h4>
+               
+            </div>
+        </div>
+    </div>
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/m" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Mobirise free maker - <a href="https://mobirise.site/n" style="color:#aaa;">Get more</a></p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>
